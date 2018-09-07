@@ -1,7 +1,7 @@
 class Tenderly < Formula
   desc "Tenderly CLI"
   homepage "https://github.com/tenderly"
-  url "@TODO"
+  url "https://storage.googleapis.com/tenderly-cli/tenderly.tar.gz"
   sha256 "@TODO"
 
   bottle :unneeded
