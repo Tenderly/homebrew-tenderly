@@ -2,7 +2,7 @@ class Tenderly < Formula
   desc "Tenderly CLI"
   homepage "https://github.com/tenderly"
   url "https://storage.googleapis.com/tenderly-cli/tenderly.tar.gz"
-  sha256 "41d63d9b53fb80279aeef6348c8b654e2abb721380cfb0d3ec0cf6161c6dc936"
+  sha256 "91ba2e3296e653d5757932cc34a018dc2e535939c607cdccefd1270a8e8a187f"
   version "0.0.1"
 
   bottle :unneeded
