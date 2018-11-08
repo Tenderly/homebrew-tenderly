@@ -3,7 +3,7 @@ class Tenderly < Formula
   homepage "https://github.com/Tenderly/tenderly-cli"
   url "https://github.com/Tenderly/tenderly-cli/releases/download/v0.0.4/tenderly_0.0.4_Darwin_amd64.tar.gz"
   version "0.0.4"
-  sha256 "63f2ff22adda83e0bb7e6ebacc318b960798507d76391f2822d897072b24e5f7"
+  sha256 "75853db76c2bf7c20d160d8120a51edcf69b6dae6eee6ff031bea805a0c6ec4f"
 
   def install
     bin.install "tenderly"
