@@ -2,9 +2,9 @@
 class Tenderly < Formula
   desc "Tenderly helps you observe your contracts in any environment."
   homepage "https://github.com/Tenderly/tenderly-cli"
-  url "https://github.com/Tenderly/tenderly-cli/releases/download/v0.2.5/tenderly_0.2.5_Darwin_amd64.tar.gz"
-  version "0.2.5"
-  sha256 "ef7f2d062514ed33dc583d94d96194464c043c249cceba3e0342ce4ee3d1d0cd"
+  url "https://github.com/Tenderly/tenderly-cli/releases/download/v0.2.6/tenderly_0.2.6_Darwin_amd64.tar.gz"
+  version "0.2.6"
+  sha256 "e2cd601bf341e6df7a5f3d4ed2cc84a755562b1d89e48659e03d86edf0009afd"
 
   def install
     bin.install "tenderly"
