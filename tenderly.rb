@@ -2,16 +2,16 @@
 class Tenderly < Formula
   desc "Tenderly helps you observe your contracts in any environment."
   homepage "https://github.com/Tenderly/tenderly-cli"
-  version "0.6.2"
+  version "0.6.3"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/Tenderly/tenderly-cli/releases/download/v0.6.2/tenderly_0.6.2_Darwin_amd64.tar.gz"
-    sha256 "cbc0469d63b1e45d81947e444ea1607de62711bf31c5e98de4b2149919be2e15"
+    url "https://github.com/Tenderly/tenderly-cli/releases/download/v0.6.3/tenderly_0.6.3_Darwin_amd64.tar.gz"
+    sha256 "58a2d12dbc35a4a58898829bcf597e51489c3cc969a31fb89fc4d7f487a5c530"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/Tenderly/tenderly-cli/releases/download/v0.6.2/tenderly_0.6.2_Linux_amd64.tar.gz"
-      sha256 "5d5b7914f593c33ff3047020cf15ac7ab9cf5d9d1d041108ec1552688d515568"
+      url "https://github.com/Tenderly/tenderly-cli/releases/download/v0.6.3/tenderly_0.6.3_Linux_amd64.tar.gz"
+      sha256 "d976fc873b641629f882cdb6423f3c84477db7b876e35d1a9e0aa35e46fe0eef"
     end
   end
 
