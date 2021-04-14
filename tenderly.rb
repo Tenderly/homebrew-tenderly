@@ -5,20 +5,20 @@
 class Tenderly < Formula
   desc "Tenderly helps you observe your contracts in any environment."
   homepage "https://github.com/Tenderly/tenderly-cli"
-  version "0.9.12"
+  version "1.0.0"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/Tenderly/tenderly-cli/releases/download/v0.9.12/tenderly_0.9.12_Darwin_amd64.tar.gz"
-    sha256 "1d316c192dc51b5d9541b0754bd5528d28df595c38d12a3f1461da7a3dd7fd8e"
+    url "https://github.com/Tenderly/tenderly-cli/releases/download/v1.0.0/tenderly_1.0.0_Darwin_amd64.tar.gz"
+    sha256 "1d635502b2b916427b299be01fabad21bb17c122b02b1813a97c9ac9d3496e74"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/Tenderly/tenderly-cli/releases/download/v0.9.12/tenderly_0.9.12_Linux_amd64.tar.gz"
-    sha256 "9e3466f93e8b0323d2dbf6e2bbbfd40a3f62111ebacbf6325ccc619491e446cd"
+    url "https://github.com/Tenderly/tenderly-cli/releases/download/v1.0.0/tenderly_1.0.0_Linux_amd64.tar.gz"
+    sha256 "e5d418edb15faca578aa9aa618752504f3af48045ab5ca8a1979e52d59a7a7c5"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/Tenderly/tenderly-cli/releases/download/v0.9.12/tenderly_0.9.12_Linux_arm64.tar.gz"
-    sha256 "dae5a63dbba4c3c878e5f0feb19aa22640687fbd3126f04fe7fcad43b1951953"
+    url "https://github.com/Tenderly/tenderly-cli/releases/download/v1.0.0/tenderly_1.0.0_Linux_arm64.tar.gz"
+    sha256 "1f75086e9444b0c7877b9f32a638a46e7f6ce9e286bf0e5d25c3105e2ff321e3"
   end
 
   def install
