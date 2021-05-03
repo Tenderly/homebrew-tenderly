@@ -5,20 +5,24 @@
 class Tenderly < Formula
   desc "Tenderly helps you observe your contracts in any environment."
   homepage "https://github.com/Tenderly/tenderly-cli"
-  version "1.0.0"
+  version "1.0.1"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/Tenderly/tenderly-cli/releases/download/v1.0.0/tenderly_1.0.0_Darwin_amd64.tar.gz"
-    sha256 "1d635502b2b916427b299be01fabad21bb17c122b02b1813a97c9ac9d3496e74"
+    url "https://github.com/Tenderly/tenderly-cli/releases/download/v1.0.1/tenderly_1.0.1_Darwin_amd64.tar.gz"
+    sha256 "e382e3c5236027d3f8ee2ea9ea4e1f38e02fc4a8be416a63a34bd34545df6a22"
+  end
+  if OS.mac? && Hardware::CPU.arm?
+    url "https://github.com/Tenderly/tenderly-cli/releases/download/v1.0.1/tenderly_1.0.1_Darwin_arm64.tar.gz"
+    sha256 "8c290d5eec77ad1559de511813a640faae7b7ae68012d83e1c5704ce9d6451ed"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/Tenderly/tenderly-cli/releases/download/v1.0.0/tenderly_1.0.0_Linux_amd64.tar.gz"
-    sha256 "e5d418edb15faca578aa9aa618752504f3af48045ab5ca8a1979e52d59a7a7c5"
+    url "https://github.com/Tenderly/tenderly-cli/releases/download/v1.0.1/tenderly_1.0.1_Linux_amd64.tar.gz"
+    sha256 "73a43d08a304006e39b756f6c2eb848ad4e9bc33f2174512d99c7e7b153148cc"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/Tenderly/tenderly-cli/releases/download/v1.0.0/tenderly_1.0.0_Linux_arm64.tar.gz"
-    sha256 "1f75086e9444b0c7877b9f32a638a46e7f6ce9e286bf0e5d25c3105e2ff321e3"
+    url "https://github.com/Tenderly/tenderly-cli/releases/download/v1.0.1/tenderly_1.0.1_Linux_arm64.tar.gz"
+    sha256 "7542d75ab070515fca65ea4b26a1403fef3b0b25cedf2085ce51c98697735709"
   end
 
   def install
