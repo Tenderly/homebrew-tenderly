@@ -5,24 +5,29 @@
 class Tenderly < Formula
   desc "Tenderly helps you observe your contracts in any environment."
   homepage "https://github.com/Tenderly/tenderly-cli"
-  version "1.1.0"
+  version "1.1.1"
   bottle :unneeded
 
-  if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/Tenderly/tenderly-cli/releases/download/v1.1.0/tenderly_1.1.0_Darwin_amd64.tar.gz"
-    sha256 "5c93501fc7f008ec21eb815e5582603fab38b4d4026313a3e7ab5ea3ac842509"
+  on_macos do
+    if Hardware::CPU.intel?
+      url "https://github.com/Tenderly/tenderly-cli/releases/download/v1.1.1/tenderly_1.1.1_Darwin_amd64.tar.gz"
+      sha256 "6a73071efe4d575bf80821d2800c40e44fa2867457f1ef01ae0fb3c5a6f0d1c9"
+    end
+    if Hardware::CPU.arm?
+      url "https://github.com/Tenderly/tenderly-cli/releases/download/v1.1.1/tenderly_1.1.1_Darwin_arm64.tar.gz"
+      sha256 "c560c531c42f8edb8c1102d280234d700072a7bbdedeba6035351e68f779e69f"
+    end
   end
-  if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/Tenderly/tenderly-cli/releases/download/v1.1.0/tenderly_1.1.0_Darwin_arm64.tar.gz"
-    sha256 "770f7e3698469a6d16293863c517f488609a8b441f2c806306b4801d3c74bb70"
-  end
-  if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/Tenderly/tenderly-cli/releases/download/v1.1.0/tenderly_1.1.0_Linux_amd64.tar.gz"
-    sha256 "8b3ff193c0680ad54a0c4bdbdf37be067fafea240ed4cab97407db3f10415e7b"
-  end
-  if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/Tenderly/tenderly-cli/releases/download/v1.1.0/tenderly_1.1.0_Linux_arm64.tar.gz"
-    sha256 "9f298ff56448e390af1bbcbeca7224909a03ae1c571f00beaae702300f2f1675"
+
+  on_linux do
+    if Hardware::CPU.intel?
+      url "https://github.com/Tenderly/tenderly-cli/releases/download/v1.1.1/tenderly_1.1.1_Linux_amd64.tar.gz"
+      sha256 "ee5673764b730ba2a0d01c07f35432638882b61e29f798f8513dea4ccd716817"
+    end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/Tenderly/tenderly-cli/releases/download/v1.1.1/tenderly_1.1.1_Linux_arm64.tar.gz"
+      sha256 "da618c6b73ec87737e0f8186ce25c93317d996ac7ffcc128a550d1f284ff9d16"
+    end
   end
 
   def install
