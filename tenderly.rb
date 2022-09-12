@@ -5,20 +5,20 @@
 class Tenderly < Formula
   desc "Tenderly helps you observe your contracts in any environment."
   homepage "https://github.com/Tenderly/tenderly-cli"
-  version "1.4.5"
+  version "1.4.6"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Tenderly/tenderly-cli/releases/download/v1.4.5/tenderly_1.4.5_Darwin_arm64.tar.gz"
-      sha256 "7eac789098683d2489abecbd4f26d81cc0dc622e7a0e78137e3346c8d9e03b23"
+      url "https://github.com/Tenderly/tenderly-cli/releases/download/v1.4.6/tenderly_1.4.6_Darwin_arm64.tar.gz"
+      sha256 "d251d3ea35897c877239ba0781e5c012148e7aa14748535a7502b13d8f069424"
 
       def install
         bin.install "tenderly"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Tenderly/tenderly-cli/releases/download/v1.4.5/tenderly_1.4.5_Darwin_amd64.tar.gz"
-      sha256 "a07ac1e4f4862980241fab4d02c42427d791bcb805dd9f911b5dd5914583ec7c"
+      url "https://github.com/Tenderly/tenderly-cli/releases/download/v1.4.6/tenderly_1.4.6_Darwin_amd64.tar.gz"
+      sha256 "f9494a81ac650023dc8f7a6577b09ad68981f0ac1dfa14b88ba29fc4dff4194f"
 
       def install
         bin.install "tenderly"
@@ -28,16 +28,16 @@ class Tenderly < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Tenderly/tenderly-cli/releases/download/v1.4.5/tenderly_1.4.5_Linux_arm64.tar.gz"
-      sha256 "bb1f705ab91a5b75ba4430d5324f7a2e614108044bf1755a9d5484eb76bb4bc0"
+      url "https://github.com/Tenderly/tenderly-cli/releases/download/v1.4.6/tenderly_1.4.6_Linux_arm64.tar.gz"
+      sha256 "a2f6de22121b1a057bb37db93664dace69aab66766a4318fbeef7d34fa8623c3"
 
       def install
         bin.install "tenderly"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Tenderly/tenderly-cli/releases/download/v1.4.5/tenderly_1.4.5_Linux_amd64.tar.gz"
-      sha256 "ab9375ce9a3b379366f9ae49ddcc701f8442beb3d5777bc64636094bdbe34bbd"
+      url "https://github.com/Tenderly/tenderly-cli/releases/download/v1.4.6/tenderly_1.4.6_Linux_amd64.tar.gz"
+      sha256 "41347d8240806aeb33073f5a4c19c8934a54b0a0d6b7a5454f86567fe51c8e71"
 
       def install
         bin.install "tenderly"
